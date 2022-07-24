@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Permanent+Marker&family=Poppins:wght@100;200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #ffffff;
+    scroll-behavior: smooth ;
+    background: #1d2b3a;
+    overflow: hidden;
+}
+form{
+    /* animation: fadeInDown 2s ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+h2{
+    padding-bottom: 1em;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+.inputBox{
+    position: relative;
+    width: 400px;
+    margin-bottom: 2em;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #ffffff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #ffffff40;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #00ffff;
+    transform: translateX(10px)translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left:1px solid #00ffff;
+    border-right:1px solid #00ffff;
+    letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #00ffff;
+}
+.contact-button{
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color: #00ffff;
+    margin-top: 10px;
+}
+.contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.contact-button span.bg{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: -5px;
+    top: 0;
+    transition: all .3s ease-in-out;
+    background-color: #00ffff;
+    transform: skewX(1deg);
+    
+}
+.contact-button:hover span.bg{
+    width: 105%;
+}
+.contact-button span.base{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid #00ffff;
+    box-sizing: border-box;
+    
+}
+.contact-button span.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.contact-button:hover span.text{
+    color: #1d1d1d;
+}
+.dHVBa-D {
+    margin-top: 4em;
+    background: #00ffff;
+    width: 34em;
+    height: 0.1em;
+    margin-bottom: 3em;
+}
+h3{
+    padding-bottom: 1em;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+/* animation */
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+#username{
+    animation: fadeInLeft 2s ;
+}
+#password{
+    animation: fadeInRight 2s ;
+}
+#signin{
+    animation: fadeInUp  2s ;
+}

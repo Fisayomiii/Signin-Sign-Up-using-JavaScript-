@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A simple JavaScript mini-mini functional software that performs a signin signup function and that saves to local storage.">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form>
+        <h2 style="animation: fadeInDown  2s ;">Sign Up</h2>
+        <!-- <div class="inputBox" id="username">
+            <input type="text" required="required">
+            <span>.Full Name.</span>
+        </div> -->
+        <div class="inputBox" id="username">
+            <input type="text" required="required" id="nameofuser">
+            <span>.UserName.</span>
+        </div>
+        <!-- <div class="inputBox" id="password">
+            <input type="text" required="required">
+            <span>.Email.</span>
+        </div> -->
+        <div class="inputBox" id="password">
+            <input type="text" required="required" id="passkey">
+            <span>.Password.</span>
+        </div>
+        <a class="contact-button" id="signin" onclick="registerUser()">
+            <div>
+                <span class="bg"></span>
+                <span class="base"></span>
+                <span class="text">
+                    Sign UP!
+                </span>
+            </div>
+        </a>
+        <span class="FormDivider__LineThrough-sc-1mk5332-0 dHVBa-D" style="animation: fadeInUp  2s ;"></span>
+        <h3 style="animation: fadeInUp  2s ;">Already Have an account?</h3>
+        <a class="contact-button" href="./signin.html" style="animation: fadeInUp  2s ;">
+            <div>
+                <span class="bg"></span>
+                <span class="base"></span>
+                <span class="text">
+                    Sign In!
+                </span>
+            </div>
+        </a>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

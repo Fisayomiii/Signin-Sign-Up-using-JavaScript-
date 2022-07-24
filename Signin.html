@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A simple JavaScript mini-mini functional software that performs a signin signup function and that saves to local storage.">
+    <title>Sign In</title>
+</head>
+<body>
+    <form>
+        <h2 style="animation: fadeInDown  2s ;">Sign In</h2>
+        <div class="inputBox" id="username">
+            <input type="text" required="required" id="us">
+            <span>.UserName.</span>
+        </div>
+        <div class="inputBox" id="password">
+            <input type="text" required="required" id="newPassword">
+            <span>.Password.</span>
+        </div>
+        <a class="contact-button" id="signin" onclick="login()">
+            <div>
+                <span class="bg"></span>
+                <span class="base"></span>
+                <span class="text">
+                    Sign IN!
+                </span>
+            </div>
+        </a>
+        <span class="FormDivider__LineThrough-sc-1mk5332-0 dHVBa-D" style="animation: fadeInUp  2s ;"></span>
+        <h3 style="animation: fadeInUp  2s ;">Don't Have an account?</h3>
+        <a class="contact-button" href="./signup.html" style="animation: fadeInUp  2s ;">
+            <div>
+                <span class="bg"></span>
+                <span class="base"></span>
+                <span class="text">
+                    Sign Up!
+                </span>
+            </div>
+        </a>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
